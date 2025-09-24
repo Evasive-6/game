@@ -28,8 +28,8 @@ Build a "Color Memory Challenge" mini game app with Django backend and React Nat
 
 ### 5. Integration and Testing
 - [x] Connect frontend to backend
-- [ ] Test locally (Django server + Expo dev)
-- [ ] Prepare for APK build
+- [x] Test locally (Django server + Expo dev)
+- [x] Prepare for APK build
 
 ### 6. Deployment
 - [x] Build APK via Expo
