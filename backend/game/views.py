@@ -51,3 +51,12 @@ def register_user(request):
 
     user = User.objects.create_user(username=username, email=email, password=password)
     return Response({'message': 'User created', 'user_id': user.id}, status=status.HTTP_201_CREATED)
+
+# Add sample data for testing
+@api_view(['POST'])
+def add_sample_data(request):
+    if not User.objects.exists():
+        user = User.objects.create_user(username='sample', email='sample@example.com', password='password')
+        game = Game.objects.create(sequence=['red', 'blue'], level=1)
+        Score.objects.create(user=user, game=game, score=10)
+    return Response({'message': 'Sample data added'})
