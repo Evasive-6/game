@@ -6,4 +6,5 @@ urlpatterns = [
     path('submit/', views.submit_score, name='submit_score'),
     path('highscores/', views.high_scores, name='high_scores'),
     path('register/', views.register_user, name='register_user'),
+    path('sample/', views.add_sample_data, name='add_sample_data'),
 ]
